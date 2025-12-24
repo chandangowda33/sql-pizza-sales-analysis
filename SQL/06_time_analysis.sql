@@ -1,3 +1,6 @@
+-- Objective:
+-- Examine ordering patterns over time to identify peak hours, revenue trends, and opportunities for operational optimization.
+
 -- Orders by Hour
 SELECT
     order_hour,

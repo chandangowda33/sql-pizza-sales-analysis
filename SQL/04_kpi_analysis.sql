@@ -1,3 +1,6 @@
+-- Objective:
+-- Calculate core business KPIs including total revenue, total orders, total quantity sold, and average order value.
+
 SELECT
     ROUND(SUM(order_revenue), 0) AS total_revenue,
     COUNT(order_id) AS total_orders,

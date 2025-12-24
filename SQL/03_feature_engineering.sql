@@ -1,3 +1,6 @@
+-- Objective:
+-- Create derived columns and analytical views such as order revenue and order hour to support KPI and trend analysis.
+
 -- Item-Level Revenue Table
 
 CREATE TABLE order_items_enriched AS
@@ -17,6 +20,8 @@ JOIN pizzas_clean p
     ON od.pizza_id = p.pizza_id
 JOIN pizza_types_clean pt
     ON p.pizza_type_id = pt.pizza_type_id;
+    
+Select * from order_items_enriched;
 
 -- Time-Based Features (Order Level)
 CREATE TABLE orders_enriched AS
@@ -26,6 +31,8 @@ SELECT
     o.order_time,
     EXTRACT(HOUR FROM o.order_time) AS order_hour
 FROM orders_clean o;
+
+Select * from orders_enriched;
 
 -- Order-Level Revenue Table
 CREATE TABLE orders_revenue AS

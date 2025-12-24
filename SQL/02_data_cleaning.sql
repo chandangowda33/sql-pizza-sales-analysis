@@ -1,3 +1,6 @@
+-- Objective:
+-- Apply necessary data validation checks and ensure consistency in keys, data types, and value ranges before analysis.
+
 CREATE TABLE orders_clean AS
 SELECT
     order_id,

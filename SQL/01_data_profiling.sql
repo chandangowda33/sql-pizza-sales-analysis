@@ -1,3 +1,6 @@
+-- Objective:
+-- Assess data quality by validating row counts, null values, duplicates, and basic distributions across all tables.
+
 -- Primary Key Validation
 
 SELECT COUNT(*) - COUNT(DISTINCT order_id) AS duplicate_order_ids

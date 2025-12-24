@@ -1,3 +1,6 @@
+-- Objective:
+-- Analyze pizza performance by category, size, and individual products to identify top and underperforming items.
+
 -- Top-Selling Pizzas (By Revenue)
 SELECT
     pizza_name,
