@@ -75,12 +75,6 @@ The dataset consists of four tables:
 
 ---
 
-## 📂 Project Structure
-
-See the folder structure above for SQL scripts and insights.
-
----
-
 ## 🚀 Conclusion
 
 This project demonstrates end-to-end SQL analytics skills, including data modeling, querying, and translating data into business decisions.
