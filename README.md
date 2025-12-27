@@ -54,6 +54,64 @@ The dataset consists of four tables:
 
 ---
 
+## 🧠 SQL Techniques Applied
+
+To extract meaningful insights from the pizza sales dataset, a range of **intermediate and advanced SQL techniques** were applied to ensure accurate analysis, performance optimization, and data reliability.
+
+### 🔗 Joins & Relationships
+
+- Performed multi-table **INNER JOIN** operations to connect:
+  - Orders
+  - Order details
+  - Pizza types
+  - Pricing data
+- Enabled consolidated analysis across **four relational tables**
+
+### 🪟 Window Functions
+
+- Used `RANK() OVER (PARTITION BY ...)` to identify **top-performing pizzas within each category**
+- Applied `SUM() OVER ()` to calculate the **percentage contribution of each pizza to total revenue**
+
+### 🔄 Data Transformation & Casting
+
+- Applied `CAST()` to standardize date and time formats
+- Used `EXTRACT(HOUR FROM ...)` to isolate **peak ordering hours** for time-based trend analysis
+
+### 🔀 Conditional Logic
+
+- Implemented `CASE WHEN` statements to classify orders into meaningful business **Time Slots**:
+  - Lunch
+  - Dinner
+  - Off-Peak
+
+### 🧵 String Manipulation
+
+- Leveraged `LENGTH()` and `REPLACE()` functions to:
+  - Parse ingredient strings
+  - Count the number of ingredients per pizza
+- Enabled complexity and customization analysis of menu items
+
+### 📊 Aggregations & Grouping
+
+- Utilized `SUM()`, `AVG()`, `COUNT()`, and `GROUP BY` to compute:
+  - Core business KPIs
+  - Hourly and category-level performance metrics
+
+### 🗃️ Data Modeling (DDL)
+
+- Created enriched **staging tables** using `CREATE TABLE AS`
+- Stored derived features such as:
+  - Item-level revenue
+  - Time buckets
+- Improved query performance and reusability
+
+### ✅ Data Validation
+
+- Developed diagnostic queries using `HAVING` and `DISTINCT`
+- Identified duplicates and validated **data integrity** prior to analysis
+
+---
+
 ## 🔍 Key Insights
 
 - Top Revenue Driver: The Thai Chicken Pizza is the primary revenue engine, generating $43,434.25 (5.31% of total revenue).
